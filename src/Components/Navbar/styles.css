@@ -17,8 +17,7 @@
     font-size: 18px;
     font-weight: bold;
     gap: 5px;
-    color: rgb(217, 217, 7);
-    transition: 300ms ease-in;
+    transition: 300ms ease-in-out;
 }
 
 .navbar-logo:hover {
@@ -29,10 +28,19 @@
     font-size: 27px; 
 }
 
+.navbar-logo .navbar-link-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: rgb(217, 217, 7);
+}
+
 .navbar-input {
     display: flex;
     align-items: center;
-    gap: 7px
+    gap: 7px;
+    border: none;
 }
 
 .navbar-button {
