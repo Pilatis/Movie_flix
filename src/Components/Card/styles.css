@@ -1,0 +1,35 @@
+.movie-card {
+    flex-direction: column;
+    max-width: 400px;
+    padding: 15px;
+    border-radius: 12px;
+    background-color: #222121;
+    margin-bottom: 20px;
+    transition: 350ms ease-in-out;
+}
+
+.movie-card:hover {
+    transform: scale(1.05);
+}
+
+.movie-card .movie-card-image {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    flex-direction: column;
+    max-width: 350px;
+    max-height: 550px;
+    margin-top: 30px;
+    border-radius: 12px;
+}
+
+.movie-card .movie-card-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(195, 195, 101);
+    transition: 250ms ease;
+}
+
+.movie-card .movie-card-title:hover {
+    color: rgb(231, 231, 68);
+}

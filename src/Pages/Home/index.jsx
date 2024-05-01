@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import './styles.css';
+import Card from '../../Components/Card';
 
-const moviesURL = import.meta.env.VITE_API;
+const moviesUrl = import.meta.env.VITE_API;
 const apiKey = import.meta.env.VITE_API_KEY;
 
 const Home = () => {
@@ -16,7 +17,7 @@ const Home = () => {
 
   useEffect(() => {
 
-    const topRatedUrl = `${moviesURL}top_rated?${apiKey}`;
+    const topRatedUrl = `${moviesUrl}top_rated?${apiKey}`;
     
     getTopRatedMovies(topRatedUrl)
   }, [])
@@ -28,9 +29,7 @@ const Home = () => {
         {topMovies.length === 0 && <h2>Carregando...</h2>}
         {topMovies.length > 0 &&
           topMovies.map((movie) => (
-            <div key={movie}>
-              <h2>{movie.title}</h2>
-            </div>
+            <Card key={movie.id} movie={movie} />
           ))}
       </div>
     </div>

@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './styles.css';
 import { Link } from 'react-router-dom';
 import { MdLocalMovies } from "react-icons/md";import { CiSearch } from "react-icons/ci";
 
 const Navbar = () => {
+  const [searchValue, setSearchValue] = useState('');
+
   return (
     <nav className="navbar-container">
       <div className="navbar-logo">
@@ -13,7 +15,7 @@ const Navbar = () => {
         </Link>
       </div>
       <div className="navbar-input">
-        <input className="navbar-input" type="search" placeholder="Busque um filme" />
+        <input className="navbar-input" type="search" placeholder="Busque um filme" value={searchValue} onChange={(e) => setSearchValue(e.target.value)}/>
         <button className="navbar-button">
           <CiSearch size="20px" color="#666666" />
         </button>
