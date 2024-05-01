@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import './css/App.css';
 import Navbar from './Components/Navbar';
-import Home from './Pages/Home';
+import { Outlet } from 'react-router-dom';
 
 function App() {
 
@@ -11,7 +11,7 @@ function App() {
 
       {/* BODY PAGE */}
       <section className='body-container'>
-          <Home />
+        <Outlet />
       </section>
     </>
   );
