@@ -10,9 +10,7 @@ function App() {
       <Navbar />
 
       {/* BODY PAGE */}
-      <section className='body-container'>
         <Outlet />
-      </section>
     </>
   );
 }

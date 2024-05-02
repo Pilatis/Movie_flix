@@ -28,8 +28,45 @@
     font-weight: bold;
     color: rgb(195, 195, 101);
     transition: 250ms ease;
+    margin-top: 5px;
+    margin-bottom: 7px;
 }
 
 .movie-card .movie-card-title:hover {
     color: rgb(231, 231, 68);
+}
+
+.movie-card .movie-card-vote {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 20px;
+    color: rgb(231, 231, 68);
+}
+
+.star-vote {
+    margin-bottom: 7px;
+} 
+
+.movie-card .movie-card-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 7px;
+    margin: 7px;
+    padding: 1em;
+    background: rgb(177, 177, 55);
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 300ms ease-in-out;
+}
+
+.movie-card-link:hover {
+    background-color: transparent;
+    border: 1px solid yellow;
+    color: rgb(223, 217, 217);
 }

@@ -40,6 +40,20 @@
     align-items: center;
     gap: 7px;
     border: none;
+    margin-left: 15px;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+input {
+    border: none;
+    margin-left: 15px;
+    font-size: 14px;
 }
 
 .navbar-button {

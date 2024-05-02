@@ -13,14 +13,13 @@ const Home = () => {
     const data = await res.json();
 
     setTopMovies(data.results);
-  }
+  };
 
   useEffect(() => {
-
     const topRatedUrl = `${moviesUrl}top_rated?${apiKey}`;
-    
-    getTopRatedMovies(topRatedUrl)
-  }, [])
+
+    getTopRatedMovies(topRatedUrl);
+  }, []);
 
   return (
     <div className="home-container">
@@ -28,12 +27,10 @@ const Home = () => {
       <div className="home-movies-container">
         {topMovies.length === 0 && <h2>Carregando...</h2>}
         {topMovies.length > 0 &&
-          topMovies.map((movie) => (
-            <Card key={movie.id} movie={movie} />
-          ))}
+          topMovies.map((movie) => <Card key={movie.id} movie={movie} />)}
       </div>
     </div>
   );
-}
+};
 
 export default Home;

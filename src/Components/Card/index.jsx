@@ -14,8 +14,8 @@ const Card = ({ movie, showLink = true }) => {
         alt={movie.title}
       />
       <h2 className="movie-card-title">{movie.title}</h2>
-      <p>
-        <FaStar className="star-bote" />
+      <p className="movie-card-vote">
+        <FaStar className="star-vote" />
         {movie.vote_average}
       </p>
       {showLink && (
