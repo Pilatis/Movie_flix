@@ -1,4 +1,10 @@
 .body-container {
-   height: 100vh;
+   height: 100%;
+   position: relative;
+   top: 120px;
+   background: rgba(21, 21, 21);
+}
 
+.main-container {
+   background: rgb(21, 21, 21);
 }

@@ -1,0 +1,24 @@
+.search-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+.search-container .search-title {
+    color: white;
+}
+
+.search-movies {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background: rgba(21, 21, 21);
+    margin-top: 20px;
+}
+
+.search-loading {
+    color: white;
+}

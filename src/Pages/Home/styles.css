@@ -3,8 +3,10 @@
 }
 
 .home-title {
+    text-align: center;
     font-size: 27px;
     color: white;
+    margin-top: 25px;
 }
 
 .home-movies-container {
